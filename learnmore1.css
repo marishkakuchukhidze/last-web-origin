@@ -653,14 +653,13 @@ i {
 .footer {
 
     background: #150e1a;
-    padding: 20px 0px;
+    padding: 5px 0px;
     font-family: 'Play', sans-serif;
     text-align: center;
+   
     margin-top: 100px;
     width: 100%;
     box-shadow: 4px 6px 6px rgba(46, 91, 173, 0.6);
-    ;
-    ;
     border-bottom-left-radius: 160px;
     border-top-right-radius: 160px;
 }
@@ -701,6 +700,16 @@ i {
         margin-top: -65vh;
 
     }
+    .hide-menu{
+        width: 30vw;
+    height: 100%;
+       size: 5px;
+       position: absolute;
+       align-items: center;
+       justify-content: center;
+      
+    }
+   
 
     .one img {
         margin-left: -83vh;
@@ -710,7 +719,7 @@ i {
     }
 
     .container {
-        padding: 300px 0px;
+        padding: 380px 0px;
     }
 
     * {
@@ -791,30 +800,108 @@ i {
     .front-end-img-2 {
         width: 40vh;
         height: 40vh;
-        margin-left: 200vh;
+        margin-left: 180vh;
         display: block;
-        position: relative;
-        
+        margin-bottom: -20vh;
+
+
     }
+
+    .header-three {
+        margin-left: 175vh;
+        font-size: 30px;
+        margin-top: 150vh;
+    }
+
+    .front-end-img-4 {
+        width: 20vh;
+        height: 20vh;
+        margin-left: 300vh;
+        margin-top: 190vh;
+    }
+
+    .front-end-img-5 {
+        width: 20vh;
+        height: 20vh;
+        margin-left: 210vh;
+        margin-top: 190vh;
+    }
+
+    .front-end-img-3 {
+        width: 250px;
+        height: 180px;
+        margin-left: 180vh;
+        margin-top: 250vh;
+    }
+
+    .header-four {
+        margin-left: 175vh;
+        font-size: 40px;
+        margin-top: 310vh;
+    }
+
+    .cards {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 100px 70px;
+        margin-left: 180vh;
+        margin-top: 520vh;
+        gap: 50px;
+
+    }
+
+    .cards img {
+        border-radius: 150px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .cards h2 {
+        padding-top: 15px;
+
+    }
+
+    .card-one {
+        padding-bottom: 50px;
+    }
+
+    .card-two {
+        padding-bottom: 50px;
+
+    }
+
+    .card-two h2 {
+        padding-left: 35px;
+    }
+
+    .card-tree h2 {
+        padding-left: 20px;
+    }
+    .section-tree{
+        margin-top: 45vh;
+        margin-right: 65px;
+    }
+.section-tree h1{
+    font-size: 30px;
+}
+.footer{
+    width: 200px;
+    height: 50px;
+    margin-top: 20vh;
+    margin-left: 25px;
+}
+.footer .row a i{
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: -10px;
+    position: absolute;
+}
 }
 
 
 
 
 
-@media (max-width:720px) {
-    .footer {
-        text-align: left;
-        padding: 5%;
-    }
-
-    .footer .row ul li {
-        display: block;
-        margin: 10px 0px;
-        text-align: left;
-    }
-
-    .footer .row a i {
-        margin: 0% 3%;
-    }
-}
