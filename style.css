@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+font-family: 'Zilla Slab', serif;
+}
+.container{
+position: relative; 
+width: 100%;
+height: 100vh;
+background-color: black;
+overflow: hidden;
+}
+.tabs input{
+    visibility: hidden;
+    display: none;
+} 
+.buttons{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap:10px;
+    z-index: 10000000;
+}
+.buttons label{
+    width: 20px;
+    height: 20px;
+    background: rgb(255, 255, 255);
+    opacity: 0.5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.tabs input:nth-child(1):checked ~ .buttons
+ label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .buttons
+ label:nth-child(2),
+.tabs input:nth-child(3):checked ~ .buttons
+ label:nth-child(3)
+ {
+    opacity: 1;
+    width: 50px;
+}
+.content
+{
+    position: relative;
+    display: flex;
+    width: 300vw;
+    transition: 0.5s;
+}
+.content .box {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    padding: 40px;
+}
+.content .box:nth-child(1){
+    background: url(./web-development-application-design-coding-and-programming-on-laptop-and-smartphone-concept-with-programming-language-and-program-code-and-layout-on-screen-vector.webp);
+    background-position: center;
+    background-size: cover;
+   
+}
+.content .box:nth-child(2){
+    background: url(./12ad8626bb6619f24c9cadb2fb537943.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.content .box:nth-child(3){
+    background: url(./pexels-krishna-lair-1165005.jpg);
+    background-position: center;
+ background-size: cover;
+   
+}
+.tabs input:nth-child(1):checked ~ .content {
+    left: 0;
+}
+.tabs input:nth-child(2):checked ~ .content {
+    left: -100vw;
+}
+.tabs input:nth-child(3):checked ~ .content {
+    left: -200vw;
+}
+.content .box .contentBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.content .box .contentBx ion-icon {
+    font-size: 12em;
+    color: white;
+    --ionicon-stroke-width: 16px;
+}
+.content .box .contentBx ion-icon.grap{
+    font-size: 12em;
+ 
+}
+.content .box .contentBx h1{
+    font-size: 3em;
+    color: white;
+}
+
+.content .box .contentBx p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    max-width: 1000px;
+  
+   
+}
+.content .box .contentBx  .pink{
+    background-color:rgb(249, 84, 118);
+    border-radius: 15px;
+}
+.content .box .contentBx  .white{
+    background-color: rgb(51, 46, 50);
+    border-radius: 15px;
+}
+.content .box .contentBx  .black{
+    background-color:rgb(0, 0, 0);
+    border-radius: 15px;
+
+}
+.content .box .contentBx button{
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    background-color: white;
+    color: #333;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    border:none;
+    border-radius: 40px;
+    transition: 0.5s;
+   
+}
+.content .box .contentBx button a{
+    text-decoration: none;
+}
+.content .box .contentBx button a:hover{
+    color: white;
+}
+.content .box .contentBx button:hover{
+    letter-spacing: 0.2em;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:375px) {
+    .content .box .contentBx h1{
+        font-size: 2em;
+    }
+}
+
+@media(max-width:414px){
+    .content .box .contentBx h1{
+        font-size: 2em;
+    }
+}
+@media(max-width:280px){
+    .content .box .contentBx h1{
+        font-size: 25px;
+    }
+
+    .content .box .contentBx ion-icon{
+        font-size: 8em;
+        color: white;
+        --ionicon-stroke-width: 16px;
+    }
+    .content .box .contentBx ion-icon.grap{
+        font-size: 8em;
+     
+    }
+
+    .content .box .contentBx button{
+        font-size: 1em;
+        margin-top: 5px;
+        padding: 10px 25px;
+    }
+}
+
+@media(max-width:422px){
+    .content .box .contentBx h1{
+        font-size: 2em;
+    }
+    .content .box .contentBx button{
+        font-size: 1.2em;
+        margin-top: 5px;
+        padding: 15px 35px;
+    }
+}

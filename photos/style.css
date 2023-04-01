@@ -1,0 +1,538 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+
+}
+
+.back-video {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(8px);
+
+}
+
+
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-top: 2px;
+  margin-top: -250px;
+  position: fixed;
+}
+
+header:hover {
+  background-color: rgba(43, 35, 47, 0.591);
+  border-radius: 3px
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+ul li {
+  float: left;
+  margin-left: 80px;
+
+}
+
+ul li a {
+  display: block;
+  padding-top: 40px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+
+
+
+
+
+.text {
+  font-size: 50px;
+
+  font-family: 'Zilla Slab', serif;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+a,
+button {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 9px 25px;
+}
+
+button:hover {
+  background-color: rgb(43, 13, 13);
+}
+
+.text-1 {
+  font-family: 'Rubik Distressed', cursive;
+  color: white;
+  margin-top: 250px;
+  margin-left: 250px;
+  font-size: 50px;
+
+
+}
+
+.h1 {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 200px;
+  font-size: 180PX;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  background: url(./back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.h4 {
+  margin-left: 200px;
+  font-size: 80px;
+  font-family: 'Zilla Slab', serif;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+.h4-1 {
+  margin-left: 1200px;
+  font-size: 150px;
+  font-family: 'Zilla Slab', serif;
+  font-size: 30px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+
+.box {
+  background: url(./6272d16f-a5ad-4746-8fdb-1416fc2204a6.jpg);
+  height: 400px;
+  width: 350px;
+  margin-left: 20px;
+  margin-top: 50px;
+  background-position: center;
+  background-size: cover;
+
+  cursor: pointer;
+  border-radius: 3px;
+  float: left;
+
+}
+
+.box-one {
+  background: url(./44db0ea890f887beb5ab304b6ae6950c.jpg);
+  height: 400px;
+  width: 350px;
+  margin-left: 80px;
+  margin-top: 50px;
+  background-position: center;
+  background-size: cover;
+  float: left;
+
+}
+
+.box-2 {
+  background: url(./f29f3a72c4339178280d82b2745fadbc.jpg);
+  height: 350px;
+  width: 350px;
+  margin-left: 1450px;
+  margin-top: -20px;
+  background-position: center;
+  background-size: cover;
+
+
+  border-radius: 3px;
+
+}
+
+
+
+
+.other-h1 {
+  margin-top: 100px;
+  color: white;
+  margin-left: 550px;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-family: 'Zilla Slab', serif;
+
+}
+
+.other-h1-text {
+  margin-top: 150px;
+  color: white;
+  margin-left: 620px;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-family: 'Zilla Slab', serif;
+}
+
+.pre {
+  margin-top: -5px;
+}
+
+span {
+  color: white;
+  font-size: 20px;
+  font-family: 'Zilla Slab', serif;
+  margin-left: 20px;
+  text-align: flex-start;
+  margin-top: 20px;
+  display: flex;
+
+
+}
+
+.bird {
+  color: white;
+  font-size: 20px;
+  font-family: 'Zilla Slab', serif;
+
+
+  margin-top: 480px;
+  padding-left: 50px;
+  text-align-last: center;
+
+
+  width: 700px;
+  height: 250px;
+  text-align: justify;
+
+}
+
+.bird-one {
+  color: white;
+  font-size: 20px;
+  font-family: 'Zilla Slab', serif;
+
+
+  margin-top: 570px;
+  padding-left: 50px;
+  text-align-last: center;
+
+
+  width: 700px;
+  height: 250px;
+  text-align: justify;
+
+}
+
+.span-one {
+  padding-top: 100px;
+  text-align: start;
+  padding-left: 20px;
+}
+
+.span-two {
+  text-align: center;
+}
+
+.box-one-text {
+  padding-top: 40px;
+}
+
+.other-h3 {
+  color: white;
+  margin-left: 250px;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-family: 'Zilla Slab', serif;
+
+}
+
+.other-h2 {
+  color: white;
+  margin-left: 250px;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-family: 'Zilla Slab', serif;
+  margin-top: 20PX;
+}
+
+.image {
+  width: 100%;
+  height: 100vh;
+  margin-left: -10px;
+
+}
+
+.film {
+  text-align-last: center;
+
+  padding: 10px;
+  width: 550px;
+  height: 200px;
+  text-align: justify;
+  margin-top: -1000px;
+  margin-left: 120px;
+}
+
+.other-h8 {
+  margin-top: 80px;
+  margin-left: 120px;
+}
+
+.H1A {
+  margin-top: 150px;
+  color: white;
+  margin-left: 620px;
+  font-size: 100px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-family: 'Zilla Slab', serif;
+}
+
+.other-video {
+  width: 800px;
+  height: 800px;
+  margin-top: 300px;
+  margin-left: 200px;
+  float: left;
+}
+
+.other-video-one {
+  width: 1000px;
+  height: 1000px;
+  margin-top: 450px;
+  margin-left: 80px;
+  float: left;
+}
+
+.box-box {
+  width: 100%;
+  background-color: white;
+  height: 120px;
+  margin-top: 280px;
+}
+
+.edward {
+  width: 800px;
+  height: 600px;
+  margin-top: 220px;
+}
+
+.adams {
+  margin-top: 1200px;
+}
+
+
+a {
+  text-decoration: none;
+  margin-right: 60px;
+}
+
+.wrapper {
+
+
+  justify-content: space-between;
+}
+
+.services {
+  width: 1100px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.single-img {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  width: 325px;
+  height: 450px;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  transform: translate(0, 0);
+  transition: .3s;
+
+}
+
+.single-img:hover {
+  transform: translate(0, -9px);
+}
+
+.img-one {
+  background-image: url(./Ansel_Adams_and_camera.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding-right: 40px;
+
+}
+
+.img-two {
+  background-image: url(./E-Weston.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding-right: 40px;
+}
+
+.img-three {
+  background-image: url(./3716_60855_man_ray.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding-right: 40px;
+}
+
+.img-text {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  padding: 0 10px 5px 10px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  transform: translate(0, 110px);
+  line-height: 25px;
+  transition: 0.5s ease;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+}
+
+.img-text h4 {
+  line-height: 15px;
+  padding: 0;
+  margin: 16px 0;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 25px;
+}
+
+.services button {
+  background: #252525;
+  color: #fff;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 50px;
+  line-height: 14px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.single-img:hover .img-text {
+  transform: translate(0, 0);
+}
+
+@media (max-width: 991px) {
+  .wrapper {
+    padding-right: 80px;
+  }
+
+  .services {
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+  a {
+    margin-bottom: 35px;
+  }
+}
+
+.footer {
+  background: rgb(16, 15, 15);
+  padding: 30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+  margin-top: 700px;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+  margin-left: 120px;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
