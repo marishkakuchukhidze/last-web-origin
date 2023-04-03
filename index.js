@@ -1,13 +1,13 @@
-let counter = 0
+let counter = 0;
 
-setInterval( () => {
+setInterval(() => {
     counter++;
-    if(counter > 2){
+    if (counter > 2) {
         counter = 0;
     }
-const inputs = document.querySelectorAll('input[name=slider]');
-inputs[counter].checked=true;
-}, 2000);
+    const inputs = document.querySelectorAll('input[name=slider]');
+    inputs[counter].checked = true;
+}, 3000);
 
 
 
