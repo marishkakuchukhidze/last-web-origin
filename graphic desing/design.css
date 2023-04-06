@@ -153,6 +153,7 @@ form {
 form input {
     outline: none;
     padding: 10px 24px;
+
 }
 
 form input:nth-child(1) {
@@ -162,14 +163,16 @@ form input:nth-child(1) {
     background: #fafafa;
 }
 
-form input:last-child {
+form .button {
     border: 1px solid #407aff;
     color: white;
     background: #407aff;
     box-shadow: #407aff 0 0 .2rem;
+    cursor: pointer;
+    padding: 8px;
 }
 
-form input:last-child:hover {
+form .button:hover {
     background: none;
     color: #407aff;
 }
