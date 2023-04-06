@@ -1,16 +1,11 @@
-const form = document.querySelector('form');
+// const submit = document.querySelector('input[type=submit]');
+// const mailInput = document.querySelector('input[type=email]');
+// console.log(mailInput);
 
-console.log(localStorage);
+// submit.addEventListener('click', (e) => {
+//     console.log(mailInput);
+//     if (mailInput) {
 
-const mail = localStorage.getItem('email');
-console.log(mail);
-if (mail) {
-    // localStorage.removeItem('email');
-}
-if (form) {
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        localStorage.setItem('email', event.target.querySelector('input').value);
-    });
-}
-
+//     }
+//     // e.preventDefault();
+// // });

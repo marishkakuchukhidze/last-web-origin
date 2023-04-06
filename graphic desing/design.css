@@ -163,7 +163,7 @@ form input:nth-child(1) {
     background: #fafafa;
 }
 
-form .button {
+form input:last-child {
     border: 1px solid #407aff;
     color: white;
     background: #407aff;
@@ -172,7 +172,7 @@ form .button {
     padding: 8px;
 }
 
-form .button:hover {
+form input:last-child:hover {
     background: none;
     color: #407aff;
 }
