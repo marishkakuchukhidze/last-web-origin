@@ -23,10 +23,11 @@ nav {
     height: 5rem;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     box-shadow: #407aff 0 0 0.9REM;
+    
 }
 
 .nav-container {
@@ -203,3 +204,95 @@ form input:last-child:hover {
 .social-aria a:hover {
     background: #407aff;
 }
+.container-2{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
+    position: absolute;
+   
+}
+.container-2 h1{
+    position: absolute;
+    margin-top:-25vh;
+    margin-left: 10vh;
+    font-size: 60px;
+   color: #c9d2e8;
+  -webkit-text-stroke: 0.1vw #4079ff80;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+.container-2 h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color:#203d81;
+    -webkit-text-stroke: 0.4vw #051d5380;
+    border-right: 2px solid #407aff;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+}
+@keyframes animate{
+    0%,10%,100%
+    {
+        width:0;
+    }
+
+    70%,90%
+    {
+        width:100%;
+    }
+}
+
+.container-2 .image-1 .one
+{
+   
+ margin-top: 30px;
+   width: 1000px;
+}
+.container-2 .image-1 .two{
+margin-top: 30px; 
+width: 500px;
+height: 500px;
+
+}
+.container-2 .image-1 .three{
+    margin-top: 30px;
+    width: 600px;
+    height: 500px;
+    
+    }
+    .cursor{
+        z-index: 999;
+        width: 20px;
+        height: 20px;
+        background-image: url(./what-is-graphic-design-header-1200.png);
+        border-radius: 50%;
+        align-items: center;
+        pointer-events: none;
+        box-shadow: 0 0 20px #cd64f3;
+        margin-left: 50px;
+        animation: colors 5s infinite;
+    }
+@keyframes colors{
+0%{
+    filter: hue-rotate(0deg);
+}
+100%{
+    filter: hue-rotate(360deg);
+}
+}
+    .cursor::before{
+        content: "";
+        position: absolute;
+        background: #cd64f3;
+        width: 50px;
+        height: 50px;
+        opacity: 0.2;
+        transform: translate(-30%, -30%);
+        border-radius: 50%;
+    }
