@@ -25,10 +25,135 @@
   animation: animation infinite 1s ease-in;
 }
 @keyframes animation {
-    0% {
-      box-shadow: 0 0 1rem #407aff;
+  0% {
+    box-shadow: 0 0 1rem #407aff;
+  }
+
+  50% {
+    box-shadow: 0 0 1rem #ff8c7a;
+  }
+}
+.box img {
+  background: none;
+  margin-top: 30vh;
+}
+.box h3 {
+  position: absolute;
+  bottom: 55vh;
+  left: 0;
+  width: 100%;
+  background: none;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .box {
+    width: 90%;
+    height: auto;
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+    .box {
+      width: 100%;
+      height: auto;
+      padding: 60px 0;
     }
+    
+    .box img {
+      max-width: 80%;
+      margin-top: 40px;
+    }
+    
+    .box h3 {
+      font-size: 24px;
+      bottom: 40vh;
+    }
+  }
   
-    50% {
-      box-shadow: 0 0 1rem #ff8c7a;
+
+@media only screen and (max-width: 820px) {
+    .box {
+      width: 100%;
+      height: auto;
+      padding: 60px 0;
     }
+    
+    .box img {
+      max-width: 80%;
+      margin-top: 40px;
+    }
+    
+    .box h3 {
+      font-size: 24px;
+      bottom: 40vh;
+    }
+  }
+  
+  
+@media only screen and (max-width: 768px) {
+  .box {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .box {
+    padding: 20px 0;
+  }
+
+  .box h3 {
+    bottom: 20px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+    .box {
+      width: 100%;
+      height: auto;
+      padding: 40px 0;
+    }
+    
+    .box img {
+      max-width: 90%;
+      margin-top: 20px;
+    }
+    
+    .box h3 {
+      font-size: 12px;
+      bottom: 32vh;
+    }
+  }
+  
+  @media only screen and (max-width: 540px) {
+    .box {
+      width: 100%;
+      height: auto;
+      padding: 30px 0;
+    }
+    
+    .box img {
+      max-width: 90%;
+      margin-top: 50px;
+    }
+    
+    .box h3 {
+      font-size: 15px;
+      bottom: 48vh;
+    }
+  }
+  
+
+@media only screen and (max-width: 500px) {
+  .box img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
